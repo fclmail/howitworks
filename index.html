@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>100x Multiplier</title>
   <style>
     body {
@@ -62,6 +62,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
+    }
+
+    .gif-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
     }
 
     .gif-label {
@@ -104,15 +111,23 @@
 
     <div class="gif-row">
       <div class="gif-column">
-        <div class="gif-box"><span>GIF 1</span></div>
+        <div class="gif-box">
+          <img src="instructions1.png" alt="Instructions 1" />
+        </div>
         <div class="gif-label">INSTRUCTIONS 1</div>
       </div>
+
       <div class="gif-column">
-        <div class="gif-box"><span>GIF 2</span></div>
+        <div class="gif-box">
+          <img src="instructions2.png" alt="Instructions 2" />
+        </div>
         <div class="gif-label">INSTRUCTIONS 2</div>
       </div>
+
       <div class="gif-column">
-        <div class="gif-box"><span>GIF 3</span></div>
+        <div class="gif-box">
+          <img src="instructions3.png" alt="Instructions 3" />
+        </div>
         <div class="gif-label">INSTRUCTIONS 3</div>
         <a class="buy-link" href="https://xyz.com" target="_blank">CLICK HERE TO BUY NOW</a>
       </div>
